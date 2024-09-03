@@ -1,6 +1,5 @@
 import time
 import pandas as pd
-import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -149,7 +148,7 @@ def time_stats(df):
     common_month_index = df['month'].mode()[0]
     print("Most Common Month: ", months[common_month_index-1].title())
     print("\nThis took %s seconds." %(time.time()- start_time))
-    print('-'*40)
+    print('\n-'*40)
 
 
     # display the most common day of week
@@ -158,7 +157,7 @@ def time_stats(df):
     common_day = df['day'].mode()[0]
     print("Most Common Day of The Week: ", common_day )
     print("\nThis took %s seconds." %(time.time()- start_time))
-    print('-'*40)
+    print('\n-'*40)
 
     # display the most common start hour
     print('Calculating The Most Common Start Hour...\n')
@@ -166,10 +165,10 @@ def time_stats(df):
     common_hour = df['hour'].mode()[0]
     print("Most Common Start Hour: ", common_hour)
     print("\nThis took %s seconds." %(time.time()- start_time))
-    print('-'*40)
+    print('\n-'*40)
 
     print("\nAll statistics took %s seconds." % (time.time() - total_start_time))
-    print('-'*40)
+    print('\n-'*40)
 
 
 def station_stats(df):
@@ -183,7 +182,7 @@ def station_stats(df):
     common_start_station = df['Start Station'].mode()[0]
     print("Most Commonly Used Start Station: ", common_start_station)
     print("\nThis took %s seconds." %(time.time()- start_time))
-    print('-'*40)
+    print('\n-'*40)
 
     # display most commonly used end station
     print("Calculating The Most Commonly Used End Station...\n")
@@ -191,7 +190,7 @@ def station_stats(df):
     common_end_station = df['End Station'].mode()[0]
     print("Most Commonly Used End Station: ", common_end_station)
     print("\nThis took %s seconds." %(time.time()- start_time))
-    print('-'*40)
+    print('\n-'*40)
     # display most frequent combination of start station and end station trip
     print("Calculating The Most Frequent Trip...\n")
     start_time = time.time()
@@ -199,11 +198,11 @@ def station_stats(df):
     common_trip = df["Trip"].mode()[0]
     print("Most Frequent Trip (Start - End): ", common_trip)
     print("\nThis took %s seconds." %(time.time()- start_time))
-    print('-'*40)
+    print('\n-'*40)
 
 
     print("\nAll statistics took %s seconds." % (time.time() - total_start_time))
-    print('-'*40)
+    print('\n-'*40)
 
 
 def trip_duration_stats(df):
@@ -236,17 +235,17 @@ def trip_duration_stats(df):
     print(f"{total_travel_time / 60:.2f} Minutes")
     print(f"{hours} Hours: {minutes} Minutes: {seconds} Seconds\n")
     print("\nThis took %s seconds." %(time.time()- start_time))
-    print('-'*40)
+    print('\n-'*40)
 
     # display mean travel time
     print("Calculating The Mean Travel Time...\n")
     start_time = time.time()
     print("Mean Travel Time:\n", df['Trip Duration'].mean(), " seconds")
     print("\nThis took %s seconds." %(time.time()- start_time))
-    print('-'*40)
+    print('\n-'*40)
 
     print("\nAll statistics took %s seconds " % (time.time() - total_start_time))
-    print('-'*40)
+    print('\n-'*40)
 
 
 def user_stats(df):
@@ -273,7 +272,7 @@ def user_stats(df):
     start_time = time.time()
     print("User Types Counts:\n", df['User Type'].value_counts())
     print("\nThis took %s seconds." %(time.time()- start_time))
-    print('-'*40)
+    print('\n-'*40)
     
 
     # Display counts of gender
@@ -282,7 +281,7 @@ def user_stats(df):
         start_time = time.time()
         print("Gender Counts:\n", df['Gender'].value_counts())
         print("\nThis took %s seconds." %(time.time()- start_time))
-        print('-'*40)
+        print('\n-'*40)
     else:
         print("Gender is Not Regarded in The Washington CSV File")
 
@@ -299,7 +298,7 @@ def user_stats(df):
 
 
     print("\nAll The Statistics took %s seconds." % (time.time() - total_start_time))
-    print('-'*40)
+    print('\n-'*40)
 
 def preview_data(df):
     """Displays raw data of the filtered bikeshare users, upon request"""
