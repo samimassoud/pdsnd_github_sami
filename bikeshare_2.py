@@ -208,7 +208,19 @@ def station_stats(df):
 
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
+    # Purpose:
+    # This function calculates and displays statistics related to trip duration, including the total and average travel time.
 
+    # Parameters:
+    # df: The DataFrame containing the filtered bikeshare data.
+
+    # Process:
+    # 1. Total Travel Time:
+    #    - The function sums up the trip durations and converts the result into hours, minutes, and seconds for better readability.
+    # 2. Mean Travel Time:
+    #    - The average trip duration is calculated and displayed.
+    # 3. Performance Timing:
+    #    - The time taken to compute each of these statistics is printed.
     print('\nCalculating Trip Duration...\n')
     total_start_time = time.time()
 
@@ -293,6 +305,7 @@ def preview_data(df):
 
 
 def main():
+    """The main function to run the bikeshare analysis."""
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
