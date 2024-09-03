@@ -1,21 +1,21 @@
-### Date created
+## Date created
 September 3, 2024
 
-### Project Title
+## Project Title
 Bikeshare Udacity project
 
-### Description
+## Description
 This project analyzes bike share data from Chicago, New York, and
 Washington to derive insights into the usage patterns.
 
-### Files used
-## Datasets:
+## Files used
+### Datasets:
 - Chicago: `chicago.csv`
 - New York: `new_york_city.csv`
 - Washington: `washington.csv`
-## Code:
+### Code:
 - Bikeshare script: `bikeshare_2.py`
-### How to Run
+## How to Run
 1. Clone the repository.
 ```bash
 $ git clone https://github.com/samimassoud/pdsnd_github_sami.git
@@ -43,7 +43,7 @@ pip install pandas numpy
 ```bash
 python bikeshare_2.py
 ```
-### Credits
+## Credits
 Udacity: For providing the project framework and guidelines.
 Pandas Documentation: [Pandas Documentation][https://pandas.pydata.org/docs/] - For data manipulation techniques.
 Stack Overflow: [Stack Overflow][https://stackoverflow.com/] - Helpful for troubleshooting code issues.
