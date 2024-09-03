@@ -251,7 +251,20 @@ def trip_duration_stats(df):
 
 def user_stats(df):
     """Displays statistics on bikeshare users."""
+    # Purpose:
+    # This function computes and displays statistics about bikeshare users, including user types, gender distribution, and birth year statistics.
 
+    # Parameters:
+    # df: The DataFrame containing the filtered bikeshare data.
+
+    # Process:
+    # 1. User Types:
+    #    - The function counts and displays the number of users by type (e.g., Subscriber, Customer).
+    # 2. Gender Distribution:
+    #    - If the gender data is available, the function counts and displays the number of users by gender.
+    # 3. Birth Year Statistics:
+    #    - If birth year data is available, the function displays the earliest, most recent, and most common birth years among users.
+    
     print('\nCalculating User Stats...\n')
     total_start_time = time.time()
 
@@ -290,6 +303,18 @@ def user_stats(df):
 
 def preview_data(df):
     """Displays raw data of the filtered bikeshare users, upon request"""
+    # Purpose:
+    # This function allows users to view individual trip data in chunks of five rows at a time.
+
+    # Parameters:
+    # df: The DataFrame containing the filtered bikeshare data.
+
+    # Process:
+    # 1. User Prompt:
+    #    - The user is asked if they would like to view individual trip data.
+    # 2. Data Display:
+    #    - If the user chooses to view data, it displays five rows at a time and asks if they want to continue viewing more data.
+    
     view_data = input("\nWould you like to view 5 rows of individual trip data? Enter yes or no\n").lower()
     start_loc = 0
     if(view_data == "yes"):
