@@ -32,8 +32,8 @@ pip install pandas numpy
 python bikeshare_2.py
 ```
 ### Credits
-- Udacity: For providing the project framework and guidelines.
-- Pandas Documentation: Consulted for data manipulation techniques.
-- Stack Overflow: Helpful for troubleshooting specific code issues.
-- Python Documentation: Referenced for general Python usage.
+Udacity: For providing the project framework and guidelines.
+Pandas Documentation: [Pandas Documentation][https://pandas.pydata.org/docs/] - For data manipulation techniques.
+Stack Overflow: [Stack Overflow][https://stackoverflow.com/] - Helpful for troubleshooting code issues.
+Python Documentation: [Python Docs][https://docs.python.org/3/] - For general Python usage.
 
