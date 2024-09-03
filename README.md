@@ -23,6 +23,18 @@ $ git clone https://github.com/samimassoud/pdsnd_github_sami.git
 $ cd pdsnd_github_sami
 ```
 2. Ensure the datasets are in the same directory as the script.
+```plaintext
+pdsnd_github_sami/
+│
+├── .github/
+│
+├── .gitignore
+├── bikeshare_2.py
+├── chicago.csv
+├── new_york_city.csv
+├── README.md
+└── washington.csv
+```
 3. Install the required dependencies:
 ```bash
 pip install pandas numpy
